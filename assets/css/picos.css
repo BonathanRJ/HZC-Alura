@@ -79,7 +79,7 @@ body{
         display: block;
         width: 32px;
         height: 32px;
-        background-image: url(../img/profile_2.png);
+        background-image: url(../img/picos.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -179,13 +179,13 @@ body{
 .titulo-pagina{
     font-size: 1.5em;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 .titulo-secao{
-    font-size: 1.2rem;
+    font-size: 1.5em;
     font-weight: 700;
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 1440px)  {
@@ -210,6 +210,7 @@ body{
 
 .cartao{
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
@@ -241,7 +242,6 @@ body{
     font-size: 1.2rem;
     font-weight: 700;
     grid-column: span 2;
-    padding-bottom: 5px;
 }
 
 .cartao__perfil{
@@ -285,23 +285,9 @@ body{
     justify-self: flex-end;
 }
 
-.cartao__botao--play::before{
-    content: '\e90b';
+.cartao__botao--pico::before{
+    content: '\e908';
     font-size: 24px;
-}
-
-.cartao__botao--carrinho::before{
-    content: '\e901';
-    font-size: 24px;
-}
-
-.cartao__botao--destaque{
-    width:100%;
-    grid-column: span 2;
-}
-
-.cartao__botao--destaque::before{
-    margin-right: 8px;
 }
 
 .cartao--recentes{
@@ -383,7 +369,7 @@ body{
 
 .secao {
     display: grid;
-    gap: 16px;
+    gap: 35px;
 }
 
 @media screen and (min-width: 1440px)  {
