@@ -232,7 +232,6 @@ body{
 }
 
 .cartao__destaque{
-    grid-column: span 4;
     padding-bottom: 5px;
     font-weight: bold;
 }

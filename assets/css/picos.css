@@ -216,6 +216,20 @@ body{
     background-color: #2C343A;
 }
 
+.fav{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.pico{
+    width: 100%;
+    height:auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 .cartao__imagem--desktop{
     display: none;
     
@@ -319,12 +333,10 @@ body{
         grid-template-columns: auto auto;
         align-items: center;
         row-gap: 24px;
-        width: 256px;
+        width: 260px;
         padding: 20px;
-        padding-bottom: 55px;
         box-sizing: border-box;
         align-self: flex-start;
-
     }
 
     .cartao--recentes .cartao__titulo{
