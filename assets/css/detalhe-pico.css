@@ -393,7 +393,9 @@ body {
 .cartao__picos{
     display: none;
 }
-
+.mapa{
+    border-radius: 2%;
+}
 
 @media screen and (min-width: 1440px) {
     .cartao__imagem--desktop{
@@ -475,5 +477,10 @@ body {
     
     .cartao__imagem--principal{
         height: auto;
+    }
+    .mapa{
+        border-radius: 20px;
+        width: 100%;
+        height: 30vh;
     }
 }
