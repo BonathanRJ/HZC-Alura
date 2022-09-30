@@ -257,6 +257,7 @@ body {
 
 .cartao__info--visualizacao::before {
     content: "\e90f";
+    margin-right: 8px;
 }
 
 .cartao__info--preco::before {
@@ -437,6 +438,10 @@ body {
     }
 
     .cartao__info--visualizacao{
+        justify-self: end;
+    }
+
+    .cartao__info--tempo{
         justify-self: end;
     }
 
