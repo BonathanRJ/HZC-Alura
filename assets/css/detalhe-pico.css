@@ -16,9 +16,7 @@ body {
     }
 }
 
-.cabecalho {
-    position: fixed;
-    width: 92vw;
+.cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,16 +26,16 @@ body {
 }
 
 .cabecalho__menu i::before{
-    content: "\e904";
+    content: '\e904';
     font-size: 24px;
 }
 
 .cabecalho__notificacao i::before{
-    content: "\e906";
+    content: '\e906';
     font-size: 24px;
 }
 
-.cabecalho__logo {
+.cabecalho__logo{
     width: 40px;
 }
 
@@ -188,9 +186,7 @@ body {
         position: fixed;
     }
 
-    .menu-lateral__logo{
-        margin: 0 1.7em;
-    }
+
 }
 
 .principal {
@@ -365,21 +361,18 @@ body {
 .foto-perfil{
     width: 30px;
     margin-right: 10px;
+    border-radius: 50%
 }
 
 .cartao__info{
     color: aliceblue;
 }
 
-.cartao__imagem--principal{
-    width: 100%;
-    height: 50vh;
-}
-
 .cartao__imagem{
     width: 100%;
     height: 27vh;
-    margin: 5px 0
+    margin: 5px 0;
+    border-radius: 15px;
 }
 
 .cartao__imagem--desktop{
@@ -474,10 +467,7 @@ body {
         width: 100%;
         margin: 0px 0
     }
-    
-    .cartao__imagem--principal{
-        height: auto;
-    }
+
     .mapa{
         border-radius: 20px;
         width: 100%;

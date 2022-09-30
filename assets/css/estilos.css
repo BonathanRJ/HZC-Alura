@@ -334,10 +334,8 @@ body{
         row-gap: 24px;
         width: 256px;
         padding: 20px;
-        padding-bottom: 55px;
         box-sizing: border-box;
         align-self: flex-start;
-
     }
 
     .cartao--recentes .cartao__titulo{
