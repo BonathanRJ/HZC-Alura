@@ -43,6 +43,25 @@ body{
     display: none;
 }
 
+.cabecalho__perfil2{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 8px;
+    align-items: center;
+    justify-self: flex-start;
+    color: #95999C;
+}
+.cabecalho__perfil2:before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media screen and (min-width: 1440px) {
     .cabecalho{
         background-color: #1D232A;
@@ -75,6 +94,24 @@ body{
     }
 
     .cabecalho__perfil:before{
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/profile_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .cabecalho__perfil2{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-start;
+        color: #95999C;
+    }
+    .cabecalho__perfil2:before{
         content: "";
         display: block;
         width: 32px;
@@ -186,13 +223,13 @@ body{
 .titulo-pagina{
     font-size: 1.5em;
     font-weight: 700;
-    margin: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .titulo-secao{
-    font-size: 1.5em;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-top: 15px;
 }
 
 @media screen and (min-width: 1440px)  {
@@ -201,9 +238,8 @@ body{
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
             "titulo-pagina titulo-pagina titulo-pagina"
-            "destaque-picos destaque-picos picos-recentes"
-            "secao-picos secao-picos secao-picos"
-            "produtos-recentes destaque-produtos destaque-produtos"
+            "destaque-video destaque-video videos-recentes"
+            "secao-videos secao-videos secao-videos"
             "secao-produtos secao-produtos secao-produtos"
         ;
         column-gap: 32px;
@@ -217,33 +253,18 @@ body{
 
 .cartao{
     width: 100%;
-    height: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
-}
-
-.fav{
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #2C343A;
-}
-
-.pico{
-    width: 100%;
-    height:auto;
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 .cartao__imagem--desktop{
     display: none;
-    
 }
 
 .cartao--destaque{
-    margin-bottom: 0px;
+    margin-bottom: 16px;
+    
 }
 
 .cartao__conteudo{
@@ -254,7 +275,6 @@ body{
 }
 
 .cartao__destaque{
-    grid-column: span 2;
     padding-bottom: 5px;
     font-weight: bold;
 }
@@ -263,19 +283,13 @@ body{
     font-size: 1.2rem;
     font-weight: 700;
     grid-column: span 2;
+    padding-bottom: 5px;
 }
 
 .cartao__perfil{
     color: #95999C;
     font-size: 0.9rem;
     grid-column: span 2;
-    padding-bottom: 5px;
-}
-
-.cartao__info{
-    display: flex;
-    align-items: center;
-    color: #95999C;
     padding-bottom: 5px;
 }
 
@@ -306,9 +320,31 @@ body{
     justify-self: flex-end;
 }
 
-.cartao__botao--pico::before{
-    content: '\e908';
+.cartao__botao--play::before{
+    content: '\e90b';
     font-size: 24px;
+}
+
+.cartao__botao--carrinho::before{
+    content: '\e901';
+    font-size: 24px;
+}
+
+.cartao__botao--destaque{
+    width:100%;
+    grid-column: span 2;
+}
+
+.cartao__botao--destaque2{
+    width: 70%;
+}
+
+.cartao__botao--destaque2::before{
+    margin-right: 8px;
+}
+
+.cartao__botao--destaque::before{
+    margin-right: 8px;
 }
 
 .cartao--recentes{
@@ -334,13 +370,16 @@ body{
         grid-column: auto;
         padding: 16px 8px;
     }
+    .cartao__botao--destaque2{
+        width: 20%;
+    }
 
     .cartao--recentes{
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
         row-gap: 24px;
-        width: 260px;
+        width: 256px;
         padding: 20px;
         box-sizing: border-box;
         align-self: flex-start;
@@ -369,7 +408,7 @@ body{
         gap: 8px;
     }
 
-    .cartao__item-favoritos{
+    .cartao__item-thumbnail{
         width: 32px;
         grid-row: span 2;
     }
@@ -388,7 +427,7 @@ body{
 
 .secao {
     display: grid;
-    gap: 35px;
+    gap: 16px;
 }
 
 @media screen and (min-width: 1440px)  {
@@ -396,26 +435,22 @@ body{
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .destaque-picos{
-        grid-area: destaque-picos;
+    .destaque-video{
+        grid-area: destaque-video;
     }
 
-    .picos-recentes{
-        grid-area: picos-recentes;
+    .videos-recentes{
+        grid-area: videos-recentes;
     }
 
-    .secao-picos{
-        grid-area: secao-picos;
+    .secao-videos{
+        grid-area: secao-videos;
     }
 
     .destaque-produtos{
         grid-area: destaque-produtos;
     }
-
-    .produtos-recentes{
-        grid-area: produtos-recentes;
-    }
-    
+  
     .secao-produtos{
         grid-area: secao-produtos;
     }
