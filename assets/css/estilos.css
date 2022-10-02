@@ -63,18 +63,15 @@ body{
         display: none;
     }
 
-    .cabecalho__perfil{
+    .cabecalho__perfil2{
         display: grid;
         grid-template-columns: repeat(3,auto);
         column-gap: 8px;
         align-items: center;
-        justify-self: flex-end;
+        justify-self: flex-start;
         color: #95999C;
-        padding: 8px 32px;
-        border-right: 1px solid #95999C;
     }
-
-    .cabecalho__perfil:before{
+    .cabecalho__perfil2:before{
         content: "";
         display: block;
         width: 32px;
@@ -236,6 +233,7 @@ body{
     padding: 16px;
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 
 .cartao__destaque{
@@ -244,7 +242,14 @@ body{
 }
 
 .cartao__titulo{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+    padding-bottom: 5px;
+}
+
+.cartao__titulo2{
+    font-size: 0.9rem;
     font-weight: 700;
     grid-column: span 2;
     padding-bottom: 5px;
@@ -257,12 +262,6 @@ body{
     padding-bottom: 5px;
 }
 
-.cartao__info{
-    display: flex;
-    align-items: center;
-    color: #95999C;
-    padding-bottom: 5px;
-}
 
 .cartao__info--tempo::before{
     content: "\e90c";
@@ -306,7 +305,16 @@ body{
     grid-column: span 2;
 }
 
+
+.cartao__botao--destaque2{
+    width: 70%;
+}
+
 .cartao__botao--destaque::before{
+    margin-right: 8px;
+}
+
+.cartao__botao--destaque2::before{
     margin-right: 8px;
 }
 
@@ -334,6 +342,10 @@ body{
         padding: 16px 8px;
     }
 
+    .cartao__botao--destaque2{
+        width: 20%;
+    }
+
     .cartao--recentes{
         display: grid;
         grid-template-columns: auto auto;
@@ -346,6 +358,9 @@ body{
     }
 
     .cartao--recentes .cartao__titulo{
+        grid-column: auto;
+    }
+    .cartao--recentes .cartao__titulo2{
         grid-column: auto;
     }
 
