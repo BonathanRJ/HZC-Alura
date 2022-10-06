@@ -198,14 +198,6 @@ body {
 @media screen and (min-width: 1440px) {
     .principal{
         display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
-            "titulo-pagina titulo-pagina titulo-pagina"
-            "destaque-video destaque-video videos-recentes"
-            "secao-videos secao-videos secao-videos"
-            "produtos-recentes destaque-produtos destaque-produtos"
-            "secao-produtos secao-produtos secao-produtos"
-        ;
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
@@ -250,18 +242,8 @@ body {
     color: #95999C;
 }
 
-.cartao__info--tempo::before {
-    content: "\e90c";
-    margin-right: 8px;
-}
-
 .cartao__info--visualizacao::before {
     content: "\e90f";
-    margin-right: 8px;
-}
-
-.cartao__info--preco::before {
-    content: "\e905";
     margin-right: 8px;
 }
 
@@ -352,7 +334,7 @@ body {
     margin-bottom: 10px;
 }
 
-.criador-artigo{
+.criador__artigo{
     margin: 0.7em 0;
     display: grid;
     grid-template-columns: auto 0.7fr 1fr;
@@ -429,7 +411,7 @@ body {
         font-size: 2em;
     }
 
-    .criador-artigo{
+    .criador__artigo{
         grid-row: 3;
     }
 

@@ -85,24 +85,6 @@ body{
         background-position: center;
     }
 
-    .cabecalho__perfil2{
-        display: grid;
-        grid-template-columns: repeat(3,auto);
-        column-gap: 8px;
-        align-items: center;
-        justify-self: flex-start;
-        color: #95999C;
-    }
-    .cabecalho__perfil2:before{
-        content: "";
-        display: block;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/profile_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
     .cabecalho__perfil:after{
         content: "\e90d";
@@ -195,6 +177,7 @@ body{
     grid-column: 1;
     grid-row: 1 / span 2;
     }
+    
 }
 
 .principal{
@@ -246,11 +229,6 @@ body{
     display: none;
 }
 
-.cartao--destaque{
-    margin-bottom: 16px;
-    
-}
-
 .cartao__conteudo{
     padding: 16px;
     display: grid;
@@ -258,19 +236,7 @@ body{
     gap: 8px;
 }
 
-.cartao__destaque{
-    padding-bottom: 5px;
-    font-weight: bold;
-}
-
 .cartao__titulo{
-    font-size: 1.2rem;
-    font-weight: 700;
-    grid-column: span 2;
-    padding-bottom: 5px;
-}
-
-.cartao__titulo2{
     font-size: 0.9rem;
     font-weight: 700;
     grid-column: span 2;
@@ -284,19 +250,8 @@ body{
     padding-bottom: 5px;
 }
 
-
-.cartao__info--tempo::before{
-    content: "\e90c";
-    margin-right: 8px;
-}
-
 .cartao__info--cifrao::before{
     content: "\e905";
-    margin-right: 8px;
-}
-
-.cartao__info--visualizacao::before{
-    content: '\e90f';
     margin-right: 8px;
 }
 
@@ -322,35 +277,8 @@ body{
     font-size: 24px;
 }
 
-.cartao__botao--destaque{
-    width:100%;
-    grid-column: span 2;
-}
-
-
-.cartao__botao--destaque2{
-    width: 70%;
-}
-
-.cartao__botao--destaque::before{
-    margin-right: 8px;
-}
-
-.cartao__botao--destaque2::before{
-    margin-right: 8px;
-}
-
-.cartao--recentes{
-    display: none;
-
-}
-
 @media screen and (min-width: 1440px)  {
-    
-    .cartao--destaque{
-        margin-bottom: 0;
-    }
-    
+       
     .cartao__imagem--mobile{
         display: none;
     }
@@ -359,68 +287,9 @@ body{
         display: block;
     }
 
-    .cartao__botao--destaque{
-        grid-column: auto;
-        padding: 16px 8px;
-    }
-
-    .cartao__botao--destaque2{
-        width: 20%;
-    }
-
-    .cartao--recentes{
-        display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-        row-gap: 24px;
-        width: 256px;
-        padding: 20px;
-        box-sizing: border-box;
-        align-self: flex-start;
-    }
-
     .cartao--recentes .cartao__titulo{
         grid-column: auto;
-    }
-    .cartao--recentes .cartao__titulo2{
-        grid-column: auto;
-    }
-
-    .cartao__link{
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #0480DC;
-        justify-self: flex-end;
-    }
-
-    .cartao__lista{
-        display: grid;
-        row-gap: 16px;
-        grid-column: span 2;
-    }
-
-    .cartao__item{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 8px;
-    }
-
-    .cartao__item-thumbnail{
-        width: 32px;
-        grid-row: span 2;
-    }
-
-    .cartao__item-titulo{
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-        font-weight: 700;
-    }
-
-    .cartao__item-perfil {
-        font-size: 0.8rem;
-        color: #95999c;
-    }
-    
+    }   
 }
 
 .secao {
@@ -432,26 +301,6 @@ body{
 @media screen and (min-width: 1440px)  {
     .secao{
         grid-template-columns: repeat(4, 1fr);
-    }
-   
-    .destaque-video{
-        grid-area: destaque-video;
-    }
-
-    .videos-recentes{
-        grid-area: videos-recentes;
-    }
-
-    .secao-videos{
-        grid-area: secao-videos;
-    }
-
-    .destaque-produtos{
-        grid-area: destaque-produtos;
-    }
-
-    .produtos-recentes{
-        grid-area: produtos-recentes;
     }
     
     .secao-produtos{
@@ -466,4 +315,8 @@ body{
     .secao-produtos4{
         grid-area: secao-produtos4;
     }
+}
+
+.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-videos, .secao-produtos{
+    visibility: hidden;
 }

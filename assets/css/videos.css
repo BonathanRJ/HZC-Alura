@@ -240,7 +240,6 @@ body{
             "titulo-pagina titulo-pagina titulo-pagina"
             "destaque-video destaque-video videos-recentes"
             "secao-videos secao-videos secao-videos"
-            "secao-produtos secao-produtos secao-produtos"
         ;
         column-gap: 32px;
         padding: 16px 60px;
@@ -295,11 +294,6 @@ body{
 
 .cartao__info--tempo::before{
     content: "\e90c";
-    margin-right: 8px;
-}
-
-.cartao__info--cifrao::before{
-    content: "\e905";
     margin-right: 8px;
 }
 
@@ -446,12 +440,7 @@ body{
     .secao-videos{
         grid-area: secao-videos;
     }
-
-    .destaque-produtos{
-        grid-area: destaque-produtos;
-    }
-  
-    .secao-produtos{
-        grid-area: secao-produtos;
-    }
+}
+.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-videos, .secao-produtos{
+    visibility: hidden;
 }

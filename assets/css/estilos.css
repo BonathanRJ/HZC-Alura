@@ -457,3 +457,7 @@ body{
         grid-area: secao-produtos;
     }
 }
+
+.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-videos, .secao-produtos{
+    visibility: hidden;
+}

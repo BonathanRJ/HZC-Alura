@@ -100,7 +100,6 @@ body {
     background-color: #15191C;
     width: 75vw;
     height: 100%;
-
     position: fixed;
     left: -100vw;
     transition: .25s;
@@ -171,7 +170,7 @@ body {
 
 .menu-lateral__link--pinturas::before {
     content: "\e90a";
-    
+ 
 }
 
 @media screen and (min-width: 1440px){
@@ -185,8 +184,6 @@ body {
     .menu-lateral--itens{
         position: fixed;
     }
-
-
 }
 
 .principal {
@@ -198,14 +195,6 @@ body {
 @media screen and (min-width: 1440px) {
     .principal{
         display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
-            "titulo-pagina titulo-pagina titulo-pagina"
-            "destaque-video destaque-video videos-recentes"
-            "secao-videos secao-videos secao-videos"
-            "produtos-recentes destaque-produtos destaque-produtos"
-            "secao-produtos secao-produtos secao-produtos"
-        ;
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
@@ -352,14 +341,14 @@ body {
     margin-bottom: 10px;
 }
 
-.criador-artigo{
+.criador__artigo{
     margin: 0.7em 0;
     display: grid;
     grid-template-columns: auto 0.7fr 1fr;
     align-items: center;
 }
 
-.foto-perfil{
+.foto__perfil{
     width: 30px;
     margin-right: 10px;
     border-radius: 50%
@@ -386,9 +375,6 @@ body {
 
 .cartao__picos{
     display: none;
-}
-.mapa{
-    border-radius: 2%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -429,7 +415,7 @@ body {
         font-size: 2em;
     }
 
-    .criador-artigo{
+    .criador__artigo{
         grid-row: 3;
     }
 
@@ -452,7 +438,7 @@ body {
         width: auto;
     }
 
-    .secao-picos{
+    .secao__picos{
         display: flex;
         flex-direction: column;
     }
@@ -471,11 +457,5 @@ body {
     .cartao__imagem{
         width: 100%;
         margin: 0px 0
-    }
-
-    .mapa{
-        border-radius: 20px;
-        width: 100%;
-        height: 30vh;
     }
 }
