@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'icones';
-    src: url(../font/icones.ttf);
+    src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
 
 body{
@@ -140,32 +140,32 @@ body{
 }
 
 .menu-lateral__link--inicio::before {
-    content: "\e902";
+    content: "\e88a";
 
 }
 
 .menu-lateral__link--videos::before {
-    content: "\e90e";
+    content: "\e04b";
     
 }
 
 .menu-lateral__link--picos::before {
-    content: "\e909";
+    content: "\e0c8";
     
 }
 
 .menu-lateral__link--integrantes::before {
-    content: "\e903";
+    content: "\f233";
     
 }
 
 .menu-lateral__link--camisas::before {
-    content: "\e900";
+    content: "\f19e";
     
 }
 
 .menu-lateral__link--pinturas::before {
-    content: "\e90a";
+    content: "\e3b7";
     
 }
 

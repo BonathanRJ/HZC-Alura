@@ -3,11 +3,6 @@
     src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
 
-@font-face {
-    font-family: 'icones';
-    src: url(../font/icones.ttf);
-}
-
 body{
     background-color: #1d212a;
     font-family: 'Open Sans', 'icones', sans-serif;
@@ -36,7 +31,7 @@ body{
 }
 
 .cabecalho__notificacao i::before{
-    content: '\e7f4';
+    content: '\e906';
     font-size: 24px;
 }
 
@@ -90,27 +85,9 @@ body{
         background-position: center;
     }
 
-    .cabecalho__perfil2{
-        display: grid;
-        grid-template-columns: repeat(3,auto);
-        column-gap: 8px;
-        align-items: center;
-        justify-self: flex-start;
-        color: #95999C;
-    }
-    .cabecalho__perfil2:before{
-        content: "";
-        display: block;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/profile_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
     .cabecalho__perfil:after{
-        content: "\e5cf";
+        content: "\e90d";
         color: #FFFFFF;
         font-size: 1.5rem;
     }
@@ -148,7 +125,7 @@ body{
 }
 
 .menu-lateral__link::before{
-    content: '\ ';
+    content: '\e900';
     width: 24px;
     height: 24px;
     font-size: 24px;
@@ -164,7 +141,6 @@ body{
 
 .menu-lateral__link--inicio::before {
     content: "\e88a";
-
 }
 
 .menu-lateral__link--videos::before {
@@ -200,6 +176,7 @@ body{
     grid-column: 1;
     grid-row: 1 / span 2;
     }
+    
 }
 
 .principal{
@@ -226,10 +203,7 @@ body{
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
             "titulo-pagina titulo-pagina titulo-pagina"
-            "destaque-video destaque-video videos-recentes"
-            "secao-videos secao-videos secao-videos"
-            "produtos-recentes destaque-produtos destaque-produtos"
-            "secao-produtos secao-produtos secao-produtos"
+            "secao-integrantes secao-integrantes secao-integrantes"
         ;
         column-gap: 32px;
         padding: 16px 60px;
@@ -251,11 +225,6 @@ body{
     display: none;
 }
 
-.cartao--destaque{
-    margin-bottom: 16px;
-    
-}
-
 .cartao__conteudo{
     padding: 16px;
     display: grid;
@@ -263,45 +232,52 @@ body{
     gap: 8px;
 }
 
-.cartao__destaque{
-    padding-bottom: 5px;
-    font-weight: bold;
-}
-
 .cartao__titulo{
-    font-size: 1.2rem;
-    font-weight: 700;
-    grid-column: span 2;
-    padding-bottom: 5px;
+    font-size: 0.9rem;
+    grid-column: span 3;
+    padding-bottom: 8px;
+    text-align: center;
 }
 
-.cartao__titulo2{
+.cartao__email{
     font-size: 0.9rem;
     font-weight: 700;
-    grid-column: span 2;
-    padding-bottom: 5px;
+    grid-column: span 3;
+    padding-bottom: 8px;
+    text-align: center;
+    color: #95999C;
+}
+
+.cartao__email::before{
+    content: '\e0be';
+    font-size: 15px;
+    margin-right: 8px;
 }
 
 .cartao__perfil{
-    color: #95999C;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     grid-column: span 2;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    text-align: center;
 }
 
-.cartao__info--tempo::before{
-    content: "\e90c";
-    margin: 8px 8px 8px 0px;
+.cartao__info{
+    color: #9896b0;
 }
 
-.cartao__info--cifrao::before{
-    content: "\e905";
-    margin: 8px 8px 8px 0px;
+.cartao__info--following::before{
+    content: "\2B99";
+    margin-right: 8px;
 }
 
-.cartao__info--visualizacao::before{
-    content: '\e90f';
-    margin: 8px 8px 8px 0px;
+.cartao__info--follower::before{
+    content: '\2B9B';
+    margin-right: 8px;
+}
+
+.cartao__info--follower{
+    text-align: end;
+    margin: 0px 25px 0px 0px;
 }
 
 .cartao__botao{
@@ -319,45 +295,15 @@ body{
 .cartao__botao--play::before{
     content: '\e90b';
     font-size: 24px;
-    margin-top: 2px;
-    justify-content: center;
 }
 
 .cartao__botao--carrinho::before{
     content: '\e901';
     font-size: 24px;
-    margin: 8px 8px 8px 0px;
-}
-
-.cartao__botao--destaque{
-    width:100%;
-    grid-column: span 2;
-}
-
-
-.cartao__botao--destaque2{
-    width: 70%;
-}
-
-.cartao__botao--destaque::before{
-    margin-right: 8px;
-}
-
-.cartao__botao--destaque2::before{
-    margin-right: 8px;
-}
-
-.cartao--recentes{
-    display: none;
-
 }
 
 @media screen and (min-width: 1440px)  {
-    
-    .cartao--destaque{
-        margin-bottom: 0;
-    }
-    
+       
     .cartao__imagem--mobile{
         display: none;
     }
@@ -366,68 +312,9 @@ body{
         display: block;
     }
 
-    .cartao__botao--destaque{
-        grid-column: auto;
-        padding: 16px 8px;
-    }
-
-    .cartao__botao--destaque2{
-        width: 20%;
-    }
-
-    .cartao--recentes{
-        display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-        row-gap: 24px;
-        width: 256px;
-        padding: 20px;
-        box-sizing: border-box;
-        align-self: flex-start;
-    }
-
     .cartao--recentes .cartao__titulo{
         grid-column: auto;
-    }
-    .cartao--recentes .cartao__titulo2{
-        grid-column: auto;
-    }
-
-    .cartao__link{
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #0480DC;
-        justify-self: flex-end;
-    }
-
-    .cartao__lista{
-        display: grid;
-        row-gap: 16px;
-        grid-column: span 2;
-    }
-
-    .cartao__item{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 8px;
-    }
-
-    .cartao__item-thumbnail{
-        width: 32px;
-        grid-row: span 2;
-    }
-
-    .cartao__item-titulo{
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-        font-weight: 700;
-    }
-
-    .cartao__item-perfil {
-        font-size: 0.8rem;
-        color: #95999c;
-    }
-    
+    }   
 }
 
 .secao {
@@ -435,36 +322,52 @@ body{
     gap: 16px;
 }
 
+.foto__perfil{
+    width: 80px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 100px 75px;   
+    border-radius: 50%;
+}
+
+.wallpaper_1{
+    background-image: url("/assets/img/wallpaper_1.jpg");
+    width: 100%;
+    height: 160px;
+}
+
+.wallpaper_2{
+    background-image: url("/assets/img/wallpaper_2.jpg");
+    width: 100%;
+    height: 160px;
+}
+
+.wallpaper_3{
+    background-image: url("/assets/img/wallpaper_3.png");
+    width: 100%;
+    height: 160px;
+}
+
+.wallpaper_4{
+    background-image: url("/assets/img/wallpaper_4.png");
+    width: 100%;
+    height: 160px;
+}
+
+.cartao__imagem{
+    width: 100%;
+    height: 160px;
+}
+
 @media screen and (min-width: 1440px)  {
     .secao{
         grid-template-columns: repeat(4, 1fr);
     }
-
-    .destaque-video{
-        grid-area: destaque-video;
-    }
-
-    .videos-recentes{
-        grid-area: videos-recentes;
-    }
-
-    .secao-videos{
-        grid-area: secao-videos;
-    }
-
-    .destaque-produtos{
-        grid-area: destaque-produtos;
-    }
-
-    .produtos-recentes{
-        grid-area: produtos-recentes;
+    
+    .secao-integrantes{
+        grid-area: secao-integrantes;
     }
     
-    .secao-produtos{
-        grid-area: secao-produtos;
-    }
 }
 
-.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-videos, .secao-produtos{
-    visibility: hidden;
-}
