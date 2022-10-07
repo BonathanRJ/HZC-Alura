@@ -401,3 +401,7 @@ body{
         grid-area: secao-picos;
     }
 }
+
+.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-picos{
+    visibility: hidden;
+}

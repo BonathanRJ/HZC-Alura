@@ -459,3 +459,7 @@ body {
         margin: 0px 0
     }
 }
+
+.conteudo__capa, .conteudo__titulo, .criador__artigo, .conteudo__imagens, .cartao__picos{
+    visibility: hidden;
+}

@@ -317,6 +317,6 @@ body{
     }
 }
 
-.titulo-pagina, .cartao--destaque, .cartao--recentes, .secao-videos, .secao-produtos{
+.titulo-pagina, .cartao--destaque, .secao-produtos, .secao-produtos2, .secao-produtos3, .secao-produtos4{
     visibility: hidden;
 }

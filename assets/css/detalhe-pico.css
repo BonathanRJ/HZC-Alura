@@ -457,3 +457,7 @@ body {
         height: 30vh;
     }
 }
+
+.conteudo__capa, .conteudo__titulo, .criador__artigo, .conteudo__imagens, .cartao__picos, .mapa{
+    visibility: hidden;
+}
