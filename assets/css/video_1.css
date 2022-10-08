@@ -2,6 +2,10 @@
     font-family: 'icones';
     src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
 
 body {
     background-color: #1D232A;
@@ -88,7 +92,7 @@ body {
     }
 
     .cabecalho__perfil::after{
-        content: "\e90d";
+        content: "\e5cf";
         color: #FFFFFF;
         font-size: 1.5rem;
     }

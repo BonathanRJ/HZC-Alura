@@ -2,6 +2,10 @@
     font-family: 'icones';
     src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
 
 body{
     background-color: #1d212a;
@@ -214,7 +218,25 @@ body{
     }
 }
 
-.cartao{
+.cartao1{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+.cartao2{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+.cartao3{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+.cartao4{
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
@@ -263,21 +285,23 @@ body{
 
 .cartao__info{
     color: #9896b0;
+    font-size: 1.3rem;
 }
 
 .cartao__info--following::before{
-    content: "\2B99";
+    content: "\e7ef";
+    font-size: 20px;
     margin-right: 8px;
 }
 
 .cartao__info--follower::before{
-    content: '\2B9B';
+    content: '\e7fe';
+    font-size: 20px;
     margin-right: 8px;
 }
 
 .cartao__info--follower{
     text-align: end;
-    margin: 0px 25px 0px 0px;
 }
 
 .cartao__botao{
@@ -371,3 +395,6 @@ body{
     
 }
 
+.titulo-pagina, .cartao1, .cartao2, .cartao3, .cartao4{
+    visibility: hidden;
+}

@@ -2,7 +2,10 @@
     font-family: 'icones';
     src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
-
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
 body{
     background-color: #1d212a;
     font-family: 'Open Sans', 'icones', sans-serif;

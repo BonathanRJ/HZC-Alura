@@ -105,3 +105,37 @@ sr.reveal('.mapa',{
   scale: 0.5,
   easing   : 'ease-in-out',
 });
+
+
+
+sr.reveal('.cartao1',{
+  origin : 'top',
+  duration: 800,
+  delay: 100,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.cartao2',{
+  origin : 'top',
+  duration: 900,
+  delay: 150,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.cartao3',{
+  origin : 'top',
+  duration: 1000,
+  delay: 150,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.cartao4',{
+  origin : 'top',
+  duration: 1100,
+  delay: 150,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
