@@ -139,3 +139,70 @@ sr.reveal('.cartao4',{
   distance : '150px',
   easing   : 'ease-in-out',
 });
+
+
+
+
+sr.reveal('.pintura1',{
+  origin : 'top',
+  duration: 800,
+  delay: 100,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura2',{
+  origin : 'top',
+  duration: 900,
+  delay: 150,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura3',{
+  origin : 'top',
+  duration: 1000,
+  delay: 200,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura4',{
+  origin : 'top',
+  duration: 1100,
+  delay: 250,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura5',{
+  origin : 'bottom',
+  duration: 1100,
+  delay: 250,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura6',{
+  origin : 'bottom',
+  duration: 1000,
+  delay: 200,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura7',{
+  origin : 'bottom',
+  duration: 900,
+  delay: 150,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});
+
+sr.reveal('.pintura8',{
+  origin : 'bottom',
+  duration: 800,
+  delay: 100,
+  distance : '150px',
+  easing   : 'ease-in-out',
+});

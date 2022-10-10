@@ -462,6 +462,11 @@ body {
     }
 }
 
+.cartao__imagem:hover{
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
 .conteudo__capa, .conteudo__titulo, .criador__artigo, .conteudo__imagens, .cartao__picos, .mapa{
     visibility: hidden;
 }
